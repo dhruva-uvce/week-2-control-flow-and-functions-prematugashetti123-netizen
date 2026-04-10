@@ -74,20 +74,6 @@ Enter your score: 105
 Invalid score
 ```
 
-score = int(input("Enter your score: "))
-
-if score < 0 or score > 100:
-    print("Invalid score")
-elif score >= 90:
-    print("Grade: A")
-elif score >= 80:
-    print("Grade: B")
-elif score >= 70:
-    print("Grade: C")
-elif score >= 60:
-    print("Grade: D")
-else:
-    print("Grade: F")
 ---
 
 **Q02.** Ask the user for a year (integer). Print whether it is a **leap year** or not.
@@ -113,14 +99,7 @@ Enter a year: 1900
 **Sample Output 2:**
 ```
 1900 is not a leap year
-```
-
-year = int(input("Enter a year: "))
-
-if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
-    print(f"{year} is a leap year")
-else:
-    print(f"{year} is not a leap year")
+`
 ---
 
 ## For Loop
@@ -143,11 +122,7 @@ Enter a number: 5
 5 x 8 = 40
 5 x 9 = 45
 5 x 10 = 50
-```
-n = int(input("Enter a number: "))
-
-for i in range(1, 11):
-    print(f"{n} x {i} = {n * i}")
+``
 ---
 
 **Q04.** Ask the user for a positive integer `n`. Print a right-angled triangle pattern of `*` with `n` rows.
@@ -164,10 +139,6 @@ Enter number of rows: 5
 ****
 *****
 ```
-n = int(input("Enter number of rows: "))
-
-for i in range(1, n + 1):
-    print("*" * i)
 ---
 
 **Q05.** Ask the user for a positive integer `n`. Print all numbers from 1 to `n`, but:
@@ -195,20 +166,7 @@ Buzz
 Fizz
 13
 14
-FizzBuzz
-```
-
-n = int(input("Enter n: "))
-
-for i in range(1, n + 1):
-    if i % 3 == 0 and i % 5 == 0:
-        print("FizzBuzz")
-    elif i % 3 == 0:
-        print("Fizz")
-    elif i % 5 == 0:
-        print("Buzz")
-    else:
-        print(i)
+FizzBu
 ---
 
 **Q06.** Ask the user for a positive integer `n`. Compute and print its **factorial** (n!) using a `for` loop.
@@ -229,17 +187,7 @@ Enter a number: 5
 Enter a number: 0
 ```
 **Sample Output 2:**
-```
-0! = 1
-```
-n = int(input("Enter a number: "))
 
-fact = 1
-
-for i in range(1, n + 1):
-    fact *= i
-
-print(f"{n}! = {fact}")
 ---
 
 ## While Loop
@@ -261,18 +209,7 @@ Enter a number: 5000
 ```
 **Sample Output 2:**
 ```
-Reversed: 5
-```
-n = int(input("Enter a number: "))
 
-rev = 0
-
-while n > 0:
-    digit = n % 10
-    rev = rev * 10 + digit
-    n //= 10
-
-print(f"Reversed: {rev}")
 ---
 
 **Q08.** Ask the user for a positive integer. Print the **sum of its digits** using a while loop.
@@ -285,19 +222,6 @@ Enter a number: 9876
 ```
 Sum of digits of 9876 = 30
 ```
-n = int(input("Enter a number: "))
-
-temp = n
-total = 0
-
-while n > 0:
-    total += n % 10
-    n //= 10
-
-print(f"Sum of digits of {temp} = {total}")
----
-
-## Functions
 
 **Q09.** Write the following two functions:
 
@@ -315,18 +239,7 @@ Hello, Alice!
 Hi, Bob!
 25
 1024
-```
-def greet(name, greeting="Hello"):
-    return f"{greeting}, {name}!"
-
-def power(base, exp=2):
-    return base ** exp
-
-if __name__ == "__main__":
-    print(greet("Alice"))
-    print(greet("Bob", "Hi"))
-    print(power(5))
-    print(power(2, 10))
+`
 ---
 
 **Q10.** Write the following two functions that demonstrate **call by reference** (mutating a list in-place):
@@ -343,19 +256,4 @@ Then in the `if __name__ == "__main__":` block, demonstrate:
 ```
 [1, 2, 3, 4]
 [2, 4, 6, 8]
-```
-def add_element(lst, element):
-    lst.append(element)
-
-def double_elements(lst):
-    for i in range(len(lst)):
-        lst[i] *= 2
-
-if __name__ == "__main__":
-    numbers = [1, 2, 3]
-
-    add_element(numbers, 4)
-    print(numbers)
-
-    double_elements(numbers)
-    print(numbers)
+``
