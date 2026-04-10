@@ -15,21 +15,6 @@
 
 
 def add_element(lst, element):
-    # --- YOUR CODE HERE ---
-    pass
-
-
-def double_elements(lst):
-    # --- YOUR CODE HERE ---
-    pass
-
-
-if __name__ == "__main__":
-    # Demonstrate call by reference
-    # --- YOUR CODE HERE ---
-    pass
-
-def add_element(lst, element):
     lst.append(element)
 
 def double_elements(lst):
