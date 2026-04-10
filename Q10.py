@@ -28,3 +28,19 @@ if __name__ == "__main__":
     # Demonstrate call by reference
     # --- YOUR CODE HERE ---
     pass
+
+def add_element(lst, element):
+    lst.append(element)
+
+def double_elements(lst):
+    for i in range(len(lst)):
+        lst[i] *= 2
+
+if __name__ == "__main__":
+    numbers = [1, 2, 3]
+
+    add_element(numbers, 4)
+    print(numbers)
+
+    double_elements(numbers)
+    print(numbers)
