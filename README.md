@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/jxnFfUOZ)
 # Control Flow & Functions — Week 2 Assignment
 **Due:** Next weekly class
 
@@ -98,8 +99,7 @@ Enter a year: 1900
 **Sample Output 2:**
 ```
 1900 is not a leap year
-```
-
+`
 ---
 
 ## For Loop
@@ -122,8 +122,7 @@ Enter a number: 5
 5 x 8 = 40
 5 x 9 = 45
 5 x 10 = 50
-```
-
+``
 ---
 
 **Q04.** Ask the user for a positive integer `n`. Print a right-angled triangle pattern of `*` with `n` rows.
@@ -140,7 +139,6 @@ Enter number of rows: 5
 ****
 *****
 ```
-
 ---
 
 **Q05.** Ask the user for a positive integer `n`. Print all numbers from 1 to `n`, but:
@@ -168,9 +166,7 @@ Buzz
 Fizz
 13
 14
-FizzBuzz
-```
-
+FizzBu
 ---
 
 **Q06.** Ask the user for a positive integer `n`. Compute and print its **factorial** (n!) using a `for` loop.
@@ -191,9 +187,6 @@ Enter a number: 5
 Enter a number: 0
 ```
 **Sample Output 2:**
-```
-0! = 1
-```
 
 ---
 
@@ -216,8 +209,6 @@ Enter a number: 5000
 ```
 **Sample Output 2:**
 ```
-Reversed: 5
-```
 
 ---
 
@@ -231,10 +222,6 @@ Enter a number: 9876
 ```
 Sum of digits of 9876 = 30
 ```
-
----
-
-## Functions
 
 **Q09.** Write the following two functions:
 
@@ -252,8 +239,7 @@ Hello, Alice!
 Hi, Bob!
 25
 1024
-```
-
+`
 ---
 
 **Q10.** Write the following two functions that demonstrate **call by reference** (mutating a list in-place):
@@ -270,4 +256,4 @@ Then in the `if __name__ == "__main__":` block, demonstrate:
 ```
 [1, 2, 3, 4]
 [2, 4, 6, 8]
-```
+``

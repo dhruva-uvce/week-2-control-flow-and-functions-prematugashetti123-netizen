@@ -29,3 +29,14 @@ if __name__ == "__main__":
     # Call the functions and print results
     # --- YOUR CODE HERE ---
     pass
+def greet(name, greeting="Hello"):
+    return f"{greeting}, {name}!"
+
+def power(base, exp=2):
+    return base ** exp
+
+if __name__ == "__main__":
+    print(greet("Alice"))
+    print(greet("Bob", "Hi"))
+    print(power(5))
+    print(power(2, 10))
